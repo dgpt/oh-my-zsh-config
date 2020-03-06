@@ -6,8 +6,7 @@ export NVM_LAZY_LOAD=true
 
 plugins=(
   git zsh-nvm chruby nvm 
-  tmux tmuxinator vim-aliases 
-  wd extract catimg
+  tmux tmuxinator vim-aliases wd
 )
 
 # Set name of the theme to load --- if set to "random", it will
