@@ -2,10 +2,12 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # this needs to happen before the plugin is loaded
-export NVM_LAZY_LOAD=true
+#export NVM_LAZY_LOAD=true
+#export NVM_NO_USE=true
 
 plugins=(
-  git zsh-nvm chruby nvm 
+  git zsh-nvm chruby nvm
+  zsh-syntax-highlighting
   tmux tmuxinator vim-aliases wd
 )
 
