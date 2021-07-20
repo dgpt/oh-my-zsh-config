@@ -3,7 +3,7 @@ function git-modified-files() {
 }
 
 function git-committed-files() {
-  git diff --name-only origin/dev
+  git diff --name-only origin/master
 }
 
 function vimm() {
