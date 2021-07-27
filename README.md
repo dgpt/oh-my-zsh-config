@@ -1,4 +1,5 @@
 Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+
 Install [tmux](https://github.com/tmux/tmux/wiki/Installing)
 
 Install submodules
