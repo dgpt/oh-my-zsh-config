@@ -6,8 +6,9 @@ export ZSH="$HOME/.oh-my-zsh"
 #export NVM_NO_USE=true
 
 plugins=(
-  git zsh-nvm chruby nvm
+  git zsh-nvm nvm
   zsh-syntax-highlighting
+  zsh-autosuggestions
   tmux tmuxinator vim-aliases wd
 )
 
