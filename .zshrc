@@ -1,11 +1,15 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export ERL_AFLAGS="-kernel shell_history enabled"
+eval "$(direnv hook zsh)"
 
 # this needs to happen before the plugin is loaded
 #export NVM_LAZY_LOAD=true
 #export NVM_NO_USE=true
+export NVM_AUTO_USE=true
 
 plugins=(
+  asdf
   git zsh-nvm nvm
   zsh-syntax-highlighting
   zsh-autosuggestions
