@@ -7,7 +7,7 @@ function git-modified-files() {
 }
 
 function git-committed-files() {
-  git diff --name-only origin/main
+  git diff --name-only origin/staging
 }
 
 function vimm() {

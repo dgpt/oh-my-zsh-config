@@ -1,19 +1,22 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export ERL_AFLAGS="-kernel shell_history enabled"
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
 # this needs to happen before the plugin is loaded
 #export NVM_LAZY_LOAD=true
 #export NVM_NO_USE=true
 export NVM_AUTO_USE=true
 
+zstyle :omz:plugins:ssh-agent lazy yes
+
 plugins=(
-  asdf
+  1password aws rust
   git zsh-nvm nvm
   zsh-syntax-highlighting
   zsh-autosuggestions
   tmux tmuxinator vim-aliases wd
+  ssh-agent
 )
 
 # Set name of the theme to load --- if set to "random", it will
@@ -76,5 +79,10 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 ZSH_CUSTOM=~/.zsh
 
 source $ZSH/oh-my-zsh.sh
+
+
+# enable command line completion for zsh (ubuntu)
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
